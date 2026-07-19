@@ -32,6 +32,8 @@ The database was populated with synthetic records and used to answer healthcare-
 
 ## Database Design
 
+[View the complete entity-relationship diagram](diagrams/hospital_database_erd.md)
+
 The database was developed from an enhanced entity-relationship model representing the operational relationships among hospitals, physicians, patients, visits, insurance providers, and payments.
 
 The design includes the following primary entities:
@@ -153,7 +155,7 @@ oracle-hospital-database/
 - `01_create_tables.sql` — creates the tables and defines primary- and foreign-key constraints.
 - `02_insert_data.sql` — populates the database with synthetic records.
 - `03_analysis_queries.sql` — contains the reporting queries and their explanations.
-- `hospital_database_erd.png` — presents the enhanced entity-relationship model.
+- `hospital_database_erd.md` — presents the database entities, attributes, keys, and relationships in a Mermaid diagram.
 - `data_dictionary.md` — documents the tables, columns, keys, and field definitions.
 
 ## Project Background and My Contribution
