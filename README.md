@@ -30,6 +30,34 @@ The database was populated with synthetic records and used to answer healthcare-
 - Aggregate functions
 - `GROUP BY`
 
+## How to Run
+
+### Requirements
+
+- Oracle Database
+- Oracle SQL Developer, SQL*Plus, or another Oracle-compatible SQL client
+- Access to a schema with permission to create tables
+
+### Execution Order
+
+Run the SQL scripts in the following order:
+
+1. `sql/01_create_tables.sql` — creates the 10 database tables and integrity constraints.
+2. `sql/02_insert_data.sql` — inserts the synthetic demonstration records.
+3. `sql/03_analysis_queries.sql` — executes the seven reporting queries.
+
+From SQL*Plus, the scripts can be executed from the repository root with:
+
+```sql
+@sql/01_create_tables.sql
+@sql/02_insert_data.sql
+@sql/03_analysis_queries.sql
+```
+
+In Oracle SQL Developer, open each file and select **Run Script**, or press `F5`, following the same execution order.
+
+The table-creation script should be run in a new or empty schema. Running it repeatedly without first removing the existing tables will produce object-already-exists errors.
+
 ## Database Design
 
 - [View the original enhanced ER diagram](diagrams/hospital_database_eer.png)
