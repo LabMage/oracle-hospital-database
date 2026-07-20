@@ -134,6 +134,8 @@ The project applies several SQL techniques for relational data retrieval and rep
 
 ## Project Results
 
+[View the validated query results](docs/query_results.md)
+
 The completed Oracle database:
 
 - Implemented 10 interconnected relational tables.
@@ -178,7 +180,8 @@ oracle-hospital-database/
 │   ├── hospital_database_eer.png
 │   └── relational_schema.md
 └── docs/
-    └── data_dictionary.md
+    ├── data_dictionary.md
+    └── query_results.md
 ```
 
 - `README.md` — provides the project overview, database design, results, and limitations.
@@ -188,6 +191,7 @@ oracle-hospital-database/
 - `hospital_database_eer.png` — presents the original enhanced entity-relationship model.
 - `relational_schema.md` — presents the implemented tables, keys, and relationships as a Mermaid diagram.
 - `data_dictionary.md` — documents the tables, columns, keys, and field definitions.
+- `query_results.md` — presents the validated results returned by all seven Oracle SQL queries.
 
 ## Project Background and My Contribution
 
